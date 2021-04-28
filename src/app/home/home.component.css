@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://brmotorola.vteximg.com.br/arquivos/c-rd-motorola@2x.png?v=637326813030100000");
+  background-size: cover;
+}

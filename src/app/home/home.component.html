@@ -1,0 +1,34 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Você compra ou vende?</span>
+    <span class="example-spacer"></span>
+    <button id="basic" type="button" mat-button (click)="compraValor()">
+        Compra
+      </button>
+      <button id="basic" type="button" mat-button (click)="vendaValor()">
+        Venda
+      </button>    
+  </mat-toolbar>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Motorola One</mat-card-title>
+      <mat-card-subtitle>Fusion</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+        <spa-compra [valorInicial]="compra">COMPRA</spa-compra>
+        <spa-venda [valorInicial]="venda">Venda</spa-venda>
+      </mat-card-actions>    
+    <img mat-card-image src="https://images-americanas.b2w.io/produtos/01/00/img/1850123/2/1850123218_1GG.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        O Motorola One Fusion permite que você tire fotos incríveis, imagens de ângulo aberto de tirar o fôlego, retratos com efeitos de desfoque e detalhes incríveis na sua foto que não são visíveis a olho nu. Com ele, você tem a câmera perfeita para cada momento, de qualquer distância.
+        Sua inteligência artificial é um diferencial, o processador Qualcomm® Snapdragon™ 710 octa-core proporciona ao smartphone um desempenho ultrarrápido. Seja ao tirar fotos ou se divertir com jogos, você verá e sentirá a diferença.
+        Com superbateria de 5000 mAh de longa duração que acompanha seu ritmo com uma única carga, você fica muito mais tranquilo no dia a dia!
+      </p>
+    </mat-card-content>
+  </mat-card>
+  
